@@ -5,7 +5,6 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.michael.passy_exchange_beta.Models.NotificationModel;
-import com.michael.passy_exchange_beta.Models.UserPostModel;
 
 import java.util.ArrayList;
 import java.util.List;
