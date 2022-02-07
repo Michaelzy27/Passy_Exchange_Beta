@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Passy_Exchange_Beta</string>
+    <string name="user_task">User Task</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Dashboard</item>
+        <item>Task</item>
+        <item>Post</item>
+        <item>Calendar</item>
+        <item>Notifications</item>
+    </string-array>
+
+    <string-array name="banks">
+        <item>Select Bank</item>
+        <item>First Bank</item>
+        <item>UBA</item>
+        <item>Ecobank</item>
+        <item>GTBank</item>
+        <item>Access Bank</item>
+        <item>Sterling Bank</item>
+        <item>Fidelity Bank</item>
+    </string-array>
 </resources>
