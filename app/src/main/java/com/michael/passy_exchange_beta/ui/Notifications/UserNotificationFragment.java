@@ -1,4 +1,4 @@
-package com.michael.passy_exchange.ui.Notifications;
+package com.michael.passy_exchange_beta.ui.Notifications;
 
 import androidx.lifecycle.ViewModelProvider;
 

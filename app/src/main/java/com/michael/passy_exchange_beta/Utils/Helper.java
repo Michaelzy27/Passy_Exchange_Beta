@@ -1,4 +1,4 @@
-package com.michael.passy_exchange.Utils;
+package com.michael.passy_exchange_beta.Utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;

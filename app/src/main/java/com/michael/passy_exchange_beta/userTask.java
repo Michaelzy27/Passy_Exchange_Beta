@@ -1,4 +1,4 @@
-package com.michael.passy_exchange;
+package com.michael.passy_exchange_beta;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

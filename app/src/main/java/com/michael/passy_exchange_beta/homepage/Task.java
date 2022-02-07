@@ -1,4 +1,4 @@
-package com.michael.passy_exchange.homepage;
+package com.michael.passy_exchange_beta.homepage;
 
 public class Task {
     String task_desc;

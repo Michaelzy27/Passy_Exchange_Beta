@@ -1,4 +1,4 @@
-package com.michael.passy_exchange.homepage;
+package com.michael.passy_exchange_beta.homepage;
 
 import android.view.LayoutInflater;
 import android.view.View;

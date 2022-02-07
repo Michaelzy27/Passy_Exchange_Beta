@@ -1,4 +1,4 @@
-package com.michael.passy_exchange;
+package com.michael.passy_exchange_beta;
 
 public class AllTaskTestDataClass {
 

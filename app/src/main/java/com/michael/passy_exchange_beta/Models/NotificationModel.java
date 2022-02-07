@@ -1,4 +1,4 @@
-package com.michael.passy_exchange.Models;
+package com.michael.passy_exchange_beta.Models;
 
 public class NotificationModel {
 
