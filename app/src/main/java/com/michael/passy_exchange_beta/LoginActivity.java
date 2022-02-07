@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.michael.passy_exchange.Utils.Helper;
+import com.michael.passy_exchange_beta.Utils.Helper;
 
 import org.json.JSONObject;
 

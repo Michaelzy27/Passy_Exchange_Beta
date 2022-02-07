@@ -14,9 +14,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.michael.passy_exchange.Adapters.NotificationAdapter;
-import com.michael.passy_exchange.R;
-import com.michael.passy_exchange.Utils.Helper;
+import com.michael.passy_exchange_beta.Adapters.NotificationAdapter;
+import com.michael.passy_exchange_beta.R;
+import com.michael.passy_exchange_beta.Utils.Helper;
 
 public class UserNotificationFragment extends Fragment {
 

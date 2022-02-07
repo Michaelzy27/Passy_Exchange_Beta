@@ -4,8 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.michael.passy_exchange.Models.NotificationModel;
-import com.michael.passy_exchange.Models.UserPostModel;
+import com.michael.passy_exchange_beta.Models.NotificationModel;
+import com.michael.passy_exchange_beta.Models.UserPostModel;
 
 import java.util.ArrayList;
 import java.util.List;

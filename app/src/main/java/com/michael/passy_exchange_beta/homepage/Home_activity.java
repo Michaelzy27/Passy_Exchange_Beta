@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.michael.passy_exchange.R;
+import com.michael.passy_exchange_beta.R;
 
 import java.util.ArrayList;
 import java.util.List;

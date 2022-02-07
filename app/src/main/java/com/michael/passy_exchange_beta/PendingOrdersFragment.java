@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.michael.passy_exchange.Adapters.PendingOrdersAdapter;
+import com.michael.passy_exchange_beta.Adapters.PendingOrdersAdapter;
 
 
 public class PendingOrdersFragment extends Fragment {

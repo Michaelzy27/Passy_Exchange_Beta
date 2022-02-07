@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.michael.passy_exchange.R;
+import com.michael.passy_exchange_beta.R;
 
 import java.util.List;
 

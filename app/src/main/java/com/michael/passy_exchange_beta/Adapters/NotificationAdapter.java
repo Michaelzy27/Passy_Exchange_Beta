@@ -11,9 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.michael.passy_exchange.Models.NotificationModel;
-import com.michael.passy_exchange.R;
-import com.michael.passy_exchange.Utils.Helper;
+import com.michael.passy_exchange_beta.Models.NotificationModel;
+import com.michael.passy_exchange_beta.R;
+import com.michael.passy_exchange_beta.Utils.Helper;
 
 import java.util.List;
 

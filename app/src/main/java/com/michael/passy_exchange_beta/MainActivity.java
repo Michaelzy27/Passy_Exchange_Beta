@@ -21,7 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.michael.passy_exchange.ui.Notifications.UserNotificationFragment;
+import com.michael.passy_exchange_beta.ui.Notifications.UserNotificationFragment;
 
 import org.json.JSONObject;
 

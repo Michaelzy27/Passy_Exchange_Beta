@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.michael.passy_exchange.homepage.Task;
-import com.michael.passy_exchange.homepage.TaskAdapter;
+import com.michael.passy_exchange_beta.homepage.Task;
+import com.michael.passy_exchange_beta.homepage.TaskAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
