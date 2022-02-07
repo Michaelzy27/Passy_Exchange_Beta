@@ -10,6 +10,12 @@
         <item>Notifications</item>
     </string-array>
 
+    <string-array name="selectCoin">
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+        <item>Ripple</item>
+    </string-array>
+
     <string-array name="banks">
         <item>Select Bank</item>
         <item>First Bank</item>
