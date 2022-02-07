@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".userTask">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@drawable/signup_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="60dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stage8"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_signUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_sign_in_user"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/tv_stage"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_signAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.Sign in Admin"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/tv_signUser"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_signUpAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.Sign up Admin"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/tv_signAdmin"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_signUpUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.Sign up User"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/tv_signUpAdmin"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_dashboardUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.Dashboard User"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/tv_signUpUser"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deadline: 31/07/2020 12:00 AM"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/tv_dashboardUser"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/btn_design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_deadline"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/circle_button"
+                android:text="Design"
+                android:textColor="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/btn_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_deadline"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:text="Pending"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_design"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Task"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorText"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="15sp"
+                    android:text="Submit your task Link here"
+                    android:textColor="@color/colorText"
+                    android:layout_marginLeft="15dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="#EDEDED"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Comment"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#EDEDED"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/sign_up_border"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

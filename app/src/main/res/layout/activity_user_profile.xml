@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="#F8F8F9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/frameContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/onboarding_vector">
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/frame"
+            android:layout_marginTop="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/person"
+        android:id="@+id/user_profile_image"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clickable="true"
+        app:civ_border_width="4dp"
+        app:civ_border_color="#10507A"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cam_icon"
+        android:id="@+id/user_profile_image_icon"
+        android:clickable="true"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/cam_icon_bg"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/frame"
+            android:text="Franklyn B. Epidi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#10507A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtUsername"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/txtInternshipIdText"
+            app:layout_constraintEnd_toStartOf="@id/txtHngIdEdtProfile"
+            android:text="INTERNSHIP ID: "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:gravity="end"
+            android:textColor="#10507A"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtUsername"
+            android:id="@+id/txtHngIdEdtProfile"
+            app:layout_constraintStart_toEndOf="@id/txtInternshipIdText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="HNG-05405"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:gravity="start"
+            android:textColor="#10507A"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/frameContainer"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/bioCard"
+            app:cardCornerRadius="30dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:id="@+id/txtfname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edtFname"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="First Name"
+            android:textSize="15sp"
+            android:textColor="#10507A"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtFname"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtfname"
+                android:hint="Please Enter Your First Name"
+                android:textColorHint="#10507A"
+                android:textColor="#10507A"
+                android:background="#00000000"
+                android:layout_marginStart="5dp"
+                android:textSize="15sp"
+                android:maxLines="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintTop_toBottomOf="@id/edtFname"
+                    android:layout_marginTop="5dp"
+                    android:background="#10507A"
+                    android:id="@+id/divider1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/txtlname"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/edtLname"
+                    app:layout_constraintTop_toBottomOf="@id/divider1"
+                    android:text="Last Name"
+                    android:textSize="15sp"
+                    android:textColor="#10507A"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtLname"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/divider1"
+                    app:layout_constraintStart_toEndOf="@id/txtlname"
+                    android:hint="Please Enter Your Last Name"
+                    android:textSize="15sp"
+                    android:textColorHint="#10507A"
+                    android:textColor="#10507A"
+                    android:background="#00000000"
+                    android:layout_marginStart="5dp"
+                    android:maxLines="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintTop_toBottomOf="@id/edtLname"
+                    android:layout_marginTop="5dp"
+                    android:background="#10507A"
+                    android:id="@+id/divider2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/txtlocation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/edtLocation"
+                    app:layout_constraintTop_toBottomOf="@id/divider2"
+                    android:text="Location"
+                    android:textSize="15sp"
+                    android:textColor="#10507A"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtLocation"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/divider2"
+                    app:layout_constraintStart_toEndOf="@id/txtlocation"
+                    android:textSize="15sp"
+                    android:theme="@style/spinnerColor"
+                    android:layout_marginStart="5dp"
+                    android:entries="@array/countries"
+                    android:spinnerMode="dropdown"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintTop_toBottomOf="@id/edtLocation"
+                    android:layout_marginTop="5dp"
+                    android:background="#10507A"
+                    android:id="@+id/divider3"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/divider3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtbio"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Bio"
+                    android:textSize="15sp"
+                    android:textColor="#10507A"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtBio"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtbio"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#10507A"
+                    android:textColorHint="#10507A"
+                    android:hint="Please Enter Your Bio"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_blue_button"
+            app:layout_constraintTop_toBottomOf="@id/bioCard"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
