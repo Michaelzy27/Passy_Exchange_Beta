@@ -161,64 +161,27 @@
                     android:layout_marginTop="20dp"/>
 
                 <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/edtLname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="20dp"
-                    app:layout_constraintTop_toBottomOf="@id/divider1"
-                    app:layout_constraintStart_toEndOf="@id/txtlname"
-                    android:hint="Please Enter Your Last Name"
-                    android:textSize="15sp"
-                    android:textColorHint="#10507A"
-                    android:textColor="#10507A"
                     android:background="#00000000"
-                    android:layout_marginStart="5dp"
-                    android:maxLines="1"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    app:layout_constraintTop_toBottomOf="@id/edtLname"
-                    android:layout_marginTop="5dp"
-                    android:background="#10507A"
-                    android:id="@+id/divider2"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:id="@+id/txtlocation"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/edtLocation"
-                    app:layout_constraintTop_toBottomOf="@id/divider2"
-                    android:text="Location"
-                    android:textSize="15sp"
+                    android:hint="Please Enter Your Last Name"
+                    android:maxLines="1"
                     android:textColor="#10507A"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginTop="20dp"/>
-
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/edtLocation"
-                    android:layout_marginTop="20dp"
-                    app:layout_constraintTop_toBottomOf="@id/divider2"
-                    app:layout_constraintStart_toEndOf="@id/txtlocation"
+                    android:textColorHint="#10507A"
                     android:textSize="15sp"
-                    android:theme="@style/spinnerColor"
-                    android:layout_marginStart="5dp"
-                    android:entries="@array/countries"
-                    android:spinnerMode="dropdown"
-                    />
+                    app:layout_constraintStart_toEndOf="@id/txtlname"
+                    app:layout_constraintTop_toBottomOf="@id/divider1" />
 
                 <View
+                    android:id="@+id/divider3"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    app:layout_constraintTop_toBottomOf="@id/edtLocation"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="75dp"
                     android:background="#10507A"
-                    android:id="@+id/divider3"/>
+                    app:layout_constraintTop_toBottomOf="@+id/edtLname" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
