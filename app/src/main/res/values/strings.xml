@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">Passy_Exchange_Beta</string>
     <string name="user_task">User Task</string>
+    <string name="icon">[ ]</string>
+    <string name="log_into_account">Log into \n your account</string>
+    <string name="username_email">Username/Email</string>
+    <string name="forgot">Forgot?</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember me</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="profile_img">Profile Image</string>
+    <string name="hello_frank">Hello Frank!</string>
+    <string name="franklyn">Franklyn B. Epidi</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_acc">Already have an account?</string>
+    <string name="get_started">Get Started</string>
+    <string name="new_string">new</string>
+
 
     <string-array name="navigation_drawer_items_array">
         <item>Dashboard</item>
@@ -8,6 +27,12 @@
         <item>Post</item>
         <item>Calendar</item>
         <item>Notifications</item>
+    </string-array>
+
+    <string-array name="selectCoin">
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+        <item>Ripple</item>
     </string-array>
 
     <string-array name="banks">

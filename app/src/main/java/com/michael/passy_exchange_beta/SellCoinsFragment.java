@@ -69,8 +69,6 @@ public class SellCoinsFragment extends Fragment {
         // Inflate the layout for this fragment
         View root = (inflater.inflate(R.layout.fragment_sell_coins, container, false));
 
-        recyclerview = root.findViewById(R.id.all_task_recyclerview);
-        layoutManager = new LinearLayoutManager(this.getContext());
         select_bank = root.findViewById(R.id.bank_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.banks, R.layout.bank_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
