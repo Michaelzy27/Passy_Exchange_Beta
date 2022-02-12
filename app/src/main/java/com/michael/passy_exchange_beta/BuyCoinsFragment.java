@@ -25,8 +25,6 @@ public class BuyCoinsFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     RecyclerView taskRecycler;
-    TaskAdapter taskAdapter;
-    List<Task> tasks = new ArrayList<>();
     TextView WelcomeText;
 
     // TODO: Rename and change types of parameters
@@ -76,22 +74,8 @@ public class BuyCoinsFragment extends Fragment {
 //        taskAdapter = new TaskAdapter(tasks);
 //        taskRecycler.setAdapter(taskAdapter);
 //        WelcomeText = view.findViewById(R.id.welcome_text);00
-
-        prepareTasks();
-
         return view;
 
-    }
-    private void prepareTasks() {
-        Task task = new Task("Stage 2 entry Task: Hotel website design","Deadline: 31/07/2020 12:00 AM",
-                "Design","pending",R.drawable.ic_baseline_arrow_forward_ios_24);
-        tasks.add(task);
-        task = new Task("Task 0.5: Git","Deadline: 07/06/2020 12:00 AM",
-                "General","closed",R.drawable.ic_baseline_arrow_forward_ios_24);
-        tasks.add(task);
-        task = new Task("Task 0.5: Lucid","Deadline: 07/06/2020 12:00 AM",
-                "General","closed",R.drawable.ic_baseline_arrow_forward_ios_24);
-        tasks.add(task);
     }
 
   }

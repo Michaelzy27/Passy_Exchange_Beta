@@ -53,15 +53,4 @@ public class Helper {
         return notificationList;
     }
 
-    public List<UserPostModel> userPostLocalData(){
-        List<UserPostModel> userPostListData = new ArrayList<>();
-
-        String s2 = "Hello, I am John Doe, happy to be here";
-        UserPostModel userPostModel = new UserPostModel("default", "John Doe", "25min", "Introduction", "Hello, I am John Doe, happy to be here");
-        userPostListData.add(userPostModel);
-        userPostListData.add(userPostModel);
-        userPostListData.add(userPostModel);
-
-        return userPostListData;
-    }
 }
