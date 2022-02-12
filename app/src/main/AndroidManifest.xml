@@ -13,30 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.michael.passy_exchange.UserProfileActivity"
+            android:name="com.michael.passy_exchange_beta.UserProfileActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="com.michael.passy_exchange_beta.OnboardingScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.michael.passy_exchange.homepage.Home_activity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
-        </activity>
-
-        <activity android:name="com.michael.passy_exchange.LoginActivity"
+        <activity android:name="com.michael.passy_exchange_beta.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="com.michael.passy_exchange.userTask"></activity>
+        <activity android:name="com.michael.passy_exchange_beta.userTask"></activity>
         <activity
-            android:name="com.michael.passy_exchange.SignUpActivity"
+            android:name="com.michael.passy_exchange_beta.SignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="com.michael.passy_exchange.MainActivity"
+        <activity android:name="com.michael.passy_exchange_beta.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
-            android:name="com.michael.passy_exchange.Splashscreen" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:name="com.michael.passy_exchange_beta.Splashscreen" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
