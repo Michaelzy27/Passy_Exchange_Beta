@@ -54,7 +54,7 @@ public class SignUpActivity extends AppCompatActivity {
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SignUpActivity.this, "Loading", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(SignUpActivity.this, "Loading", Toast.LENGTH_SHORT).show();
 
                 String username = Username.getText().toString();
                 String email = Email.getText().toString();
