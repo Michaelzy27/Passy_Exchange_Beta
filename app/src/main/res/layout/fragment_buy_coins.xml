@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home_vector"
+    android:background="#D1E3EE"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,7 +28,7 @@
             app:layout_constraintHorizontal_bias="0.097"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.099" />
+            app:layout_constraintVertical_bias="0.045" />
 
         <TextView
             android:id="@+id/textView9"
@@ -58,9 +58,9 @@
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="340dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_marginBottom="204dp"
-            android:background="@drawable/edit_text_bg"
+            android:background="@drawable/rounded_white_button"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingStart="12dp"
@@ -75,21 +75,23 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="340dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="460dp"
-            android:background="@drawable/edit_text_bg"
+            android:layout_height="45dp"
+            android:layout_marginBottom="504dp"
+            android:background="@drawable/spinner_bg_bank"
             android:entries="@array/selectCoin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.638" />
 
         <EditText
             android:id="@+id/editTextTextPersonName"
             android:layout_width="340dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/edit_text_bg"
+            android:background="@drawable/rounded_white_button"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingStart="12dp"
