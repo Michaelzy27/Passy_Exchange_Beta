@@ -1,5 +1,6 @@
 package com.michael.passy_exchange_beta;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,6 +13,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.michael.passy_exchange_beta.Utils.Helper;
 
 import okhttp3.FormBody;
@@ -28,6 +33,8 @@ public class SignUpActivity extends AppCompatActivity {
     EditText Username, Email, Password, ConfirmPassword, FirstName, LastNmae;
     Button SignUp;
 
+    FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +50,8 @@ public class SignUpActivity extends AppCompatActivity {
         FirstName = findViewById(R.id.first_name);
         LastNmae = findViewById(R.id.last_name);
         SignUp = findViewById(R.id.sign_up);
+
+        firebaseAuth = FirebaseAuth.getInstance();
 
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,58 +86,23 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(SignUpActivity.this, "Please enter your Last Name", Toast.LENGTH_SHORT).show();
                 }else {
 
-                    Signup signup = new Signup();
-                    signup.execute(username,email,password,firstName,lastName);
-                    helper.progressDialogStart("Sign up User", "Please wait while we sign up up!");
+                    firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(SignUpActivity.this, "Signup successful", Toast.LENGTH_SHORT).show();
+                                Log.i("signup result", task.getResult().toString());
+                            } else{
+                                Toast.makeText(SignUpActivity.this, "Signup unsuccessful", Toast.LENGTH_SHORT).show();
+                                Log.i("Signup result", task.getException().toString());
+                            }
+                        }
+                    });
 
                 }
 
             }
         });
 
-    }
-
-    public class Signup extends AsyncTask<String, Void, String> {
-
-        @Override
-        protected String doInBackground(String... strings) {
-
-            OkHttpClient okHttpClient = new OkHttpClient();
-
-            String usernamee = strings[0];
-            String emaill = strings[1];
-            String passwordd = strings[2];
-            String trackk = "5f1c30521f6e7fa0fcbfa160";
-            String firstNamee = strings[4];
-            String lastNamee = strings[5];
-            String locationn = strings[6];
-
-            RequestBody requestBody = new FormBody.Builder()
-                    .add("email", emaill)
-                    .add("password", passwordd)
-                    .add("firstName", firstNamee)
-                    .add("lastName", lastNamee)
-                    .add("location", locationn)
-                    .add("userName", usernamee)
-                    .add("trackId", trackk)
-                    .build();
-
-            Request request = new Request.Builder().url("https://hngboard.herokuapp.com/users/register").post(requestBody).build();
-
-            try{
-                Response response = okHttpClient.newCall(request).execute();//gets a response from the server
-                Log.i("hhh", "hhh0");
-                String result = response.body().string();
-                Log.i("responseBody", result);
-                helper.progressDialogEnd();
-                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(i);
-
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-
-            return null;
-        }
     }
 }
