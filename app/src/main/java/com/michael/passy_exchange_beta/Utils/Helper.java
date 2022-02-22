@@ -2,9 +2,12 @@ package com.michael.passy_exchange_beta.Utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Toast;
 
 import com.michael.passy_exchange_beta.Models.NotificationModel;
+import com.michael.passy_exchange_beta.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +16,7 @@ public class Helper {
     ProgressDialog progressDialog;
     Context context;
     private NotificationModel notificationModel;
+    CustomProgressDialog dialog;
 
     public Helper(){
 
@@ -23,15 +27,21 @@ public class Helper {
     }
 
     public void progressDialogStart(String titleMessage, String detailMessage){
-        progressDialog = new ProgressDialog(context);
-        progressDialog.setTitle(titleMessage);
-        progressDialog.setMessage(detailMessage);
-        progressDialog.show();
-        progressDialog.setCanceledOnTouchOutside(true);
+
+        dialog = new CustomProgressDialog(context, titleMessage, detailMessage);
+        dialog.show();
+
+//        progressDialog = new ProgressDialog(context);
+//        View view = LayoutInflater.from(context).inflate(R.layout.custom_progress_dialog, null);
+//        progressDialog.setContentView(view);
+//        progressDialog.setTitle(titleMessage);
+//        progressDialog.setMessage(detailMessage);
+//        progressDialog.show();
+//        progressDialog.setCanceledOnTouchOutside(true);
     }
 
     public void progressDialogEnd(){
-        progressDialog.dismiss();
+        dialog.dismiss();
     }
 
     public void toastMessage(Context context, String message){

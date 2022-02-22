@@ -36,6 +36,7 @@
                 android:layout_marginTop="28dp"
                 android:text="Amount:"
                 android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.12"
                 app:layout_constraintStart_toStartOf="parent"
