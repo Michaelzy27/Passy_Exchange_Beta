@@ -84,6 +84,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     } else {
                         Toast.makeText(LoginActivity.this, "Login unsuccessful", Toast.LENGTH_SHORT).show();
+                        helper.progressDialogEnd();
                         Log.i("Login", task.getException().toString());
                     }
                 }
