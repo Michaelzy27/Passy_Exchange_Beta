@@ -86,6 +86,8 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(SignUpActivity.this, "Please enter your Last Name", Toast.LENGTH_SHORT).show();
                 }else {
 
+                    helper.progressDialogStart(R.layout.custom_success_dialog, true);
+
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
