@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.michael.passy_exchange_beta.Utils.Helper;
+import com.michael.passy_exchange_beta.Utils.User;
 
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
@@ -28,6 +29,7 @@ import okhttp3.Response;
 public class SignUpActivity extends AppCompatActivity {
 
     Helper helper;
+    User user;
 
     TextView logIn;
     EditText Username, Email, Password, ConfirmPassword, FirstName, LastNmae;
@@ -85,6 +87,8 @@ public class SignUpActivity extends AppCompatActivity {
                 }else if (lastName.isEmpty()){
                     Toast.makeText(SignUpActivity.this, "Please enter your Last Name", Toast.LENGTH_SHORT).show();
                 }else {
+
+                    user = new User(username, email, firstName, lastName);
 
                     helper.progressDialogStart(R.layout.custom_progress_dialog, false);
 
