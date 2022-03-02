@@ -2,12 +2,16 @@ package com.michael.passy_exchange_beta.Utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
 import com.michael.passy_exchange_beta.Models.NotificationModel;
+import com.michael.passy_exchange_beta.OnboardingScreen;
 import com.michael.passy_exchange_beta.R;
+import com.michael.passy_exchange_beta.Splashscreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +30,20 @@ public class Helper {
         this.context = context;
     }
 
-    public void progressDialogStart(String titleMessage, String detailMessage){
+    public void progressDialogStart(int dialogViewId, boolean signup){  //boolean checks if this method was called by Signup page
 
-        dialog = new CustomProgressDialog(context, titleMessage, detailMessage);
+        dialog = new CustomProgressDialog(context, dialogViewId, signup);
         dialog.show();
+
+        if (signup) {
+
+            new Handler().postDelayed(new Runnable() { //if called by Signup page, the success dialog shows and dismisses by itself after 5 seconds
+                @Override
+                public void run() {
+                    progressDialogEnd();
+                }
+            }, 5000);
+        }
 
 //        progressDialog = new ProgressDialog(context);
 //        View view = LayoutInflater.from(context).inflate(R.layout.custom_progress_dialog, null);

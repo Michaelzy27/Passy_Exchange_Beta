@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if (password.length() == 0) {
             Toast.makeText(this, "Please enter a password", Toast.LENGTH_SHORT).show();
         } else {
-            helper.progressDialogStart("Logging you in","pwait while we log you in");
+            helper.progressDialogStart(R.layout.custom_progress_dialog, false);
 
             firebaseAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
