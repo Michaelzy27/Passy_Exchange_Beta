@@ -92,7 +92,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                     helper.progressDialogStart(R.layout.custom_progress_dialog, false);
 
-                    firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                    firebaseAuth.createUserWithEmailAndPassword(user.email, email.password).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
