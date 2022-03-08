@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.michael.passy_exchange_beta.Utils.Helper;
 import com.michael.passy_exchange_beta.Utils.User;
 
@@ -29,13 +31,15 @@ import okhttp3.Response;
 public class SignUpActivity extends AppCompatActivity {
 
     Helper helper;
-    User user;
+    //User user;
 
     TextView logIn;
     EditText Username, Email, Password, ConfirmPassword, FirstName, LastNmae;
     Button SignUp;
 
     FirebaseAuth firebaseAuth;
+    FirebaseDatabase database;
+    DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,9 @@ public class SignUpActivity extends AppCompatActivity {
         SignUp = findViewById(R.id.sign_up);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        reference = FirebaseDatabase.getInstance().getReference();
+
 
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +95,7 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(SignUpActivity.this, "Please enter your Last Name", Toast.LENGTH_SHORT).show();
                 }else {
 
-                    user = new User(username, email, firstName, lastName);
+                    //user = new User(username, email, firstName, lastName);
 
                     helper.progressDialogStart(R.layout.custom_progress_dialog, false);
 
@@ -96,11 +103,15 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
+
+                                reference.child("htest").setValue(username);
+
                                 helper.progressDialogEnd();
                                 helper.progressDialogStart(R.layout.custom_success_dialog, true);
                                 Toast.makeText(SignUpActivity.this, "Signup successful", Toast.LENGTH_SHORT).show();
                                 Log.i("signup result", task.getResult().toString());
                             } else{
+                                helper.progressDialogEnd();
                                 Toast.makeText(SignUpActivity.this, "Signup unsuccessful", Toast.LENGTH_SHORT).show();
                                 Log.i("Signup result", task.getException().toString());
                             }
