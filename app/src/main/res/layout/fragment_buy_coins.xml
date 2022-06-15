@@ -20,26 +20,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_bold"
-            android:text="Buy Coins"
+            android:text="Welcome to the Ball Room!"
             android:textColor="#10507A"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintHorizontal_bias="0.489"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.045" />
+            app:layout_constraintVertical_bias="0.044" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="@font/dm_sans_bold"
-            android:text="Choose the coin that you want to buy."
+            android:text="#HeKnowYou#4528"
             android:textColor="#10507A"
             android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
@@ -47,81 +48,44 @@
             android:layout_width="340dp"
             android:layout_height="42dp"
             android:background="@drawable/sign_up_border"
-            android:text="Place order"
+            android:text="Ping Other Ballers"
             android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-            app:layout_constraintVertical_bias="0.235" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="340dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="204dp"
-            android:background="@drawable/rounded_white_button"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingStart="12dp"
-            android:textColorHint="#10507A"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="340dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="504dp"
-            android:background="@drawable/spinner_bg_bank"
-            android:entries="@array/selectCoin"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9"
-            app:layout_constraintVertical_bias="0.638" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="340dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/rounded_white_button"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingStart="12dp"
-            android:textColorHint="#10507A"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.521"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.735" />
 
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="wrap_content"
+            android:layout_width="303dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="34dp"
-            android:text="Amount"
-            android:textColor="#10507A"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Waiting for other ballers to join the room...."
+            android:textColor="#FC75F6"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.367" />
 
-        <TextView
-            android:id="@+id/textView12"
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Wave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="Wallet Address"
-            android:textColor="#10507A"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#FC75F6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

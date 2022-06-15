@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splashscreen_background"
+    android:background="#406ecc"
     tools:context=".Splashscreen">
 
   <ImageView
@@ -15,16 +15,38 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/splash_vector" />
+      app:srcCompat="@drawable/bbg" />
 
-  <ImageView
-      android:id="@+id/logo"
+  <TextView
+      android:id="@+id/splashtxt"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:fontFamily="casual"
+      android:text="BUBBLEGOOSE BALLERS"
+      android:textColor="#FC75F6"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/imageView3"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="@+id/imageView3"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.103" />
+
+  <TextView
+      android:id="@+id/weballin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="casual"
+      android:text="We Ballin'"
+      android:textColor="#FC75F6"
+      android:textSize="32sp"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.498"
-      app:srcCompat="@drawable/hng_board" />
+      app:layout_constraintVertical_bias="0.894" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
