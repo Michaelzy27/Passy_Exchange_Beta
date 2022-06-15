@@ -43,16 +43,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Hello Baller!"
+            android:text="@string/hello_frank"
             android:textColor="#fff"
             android:textSize="18sp" />
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/profile_img"
-            android:src="@drawable/ghost" />
+            android:src="@drawable/hng_board2" />
 
         <TextView
             android:id="@+id/name_nav_bar"
@@ -60,9 +60,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Foot Baller (HeKnowYou#4528)"
+            android:text="@string/franklyn"
             android:textColor="#fff"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <ListView
             android:id="@+id/left_drawer"
