@@ -4,69 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".SignUpActivity">
+        tools:context=".SignUpActivity"
+        android:background="#F8F8F9">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:background="@drawable/peek_26"
+            android:layout_height="450dp"
+            android:background="@drawable/signup_background"
             android:orientation="vertical"
             android:paddingStart="32dp"
-            android:paddingTop="32dp"
+            android:paddingTop="48dp"
             android:paddingEnd="0dp">
 
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32sp"
-            android:paddingLeft="10dp"
-            android:text="Join the Ballers!"
-            android:textColor="#10507A"
-            android:textSize="27sp"
-            android:textStyle="bold" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/signup_email_username"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:autofillHints="@string/username_email"
-                android:drawableStart="@drawable/ic_baseline_person_outline_24"
-                android:drawablePadding="5dp"
-                android:hint="Discord ID"
-                android:inputType="textEmailAddress"
-                android:textColor="#000"
-                android:textColorHint="#04ABFB" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/icon"
+                android:src="@drawable/hng_board2"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:paddingStart="0dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="10dp"
-                android:text="@string/forgot"
-                android:textSize="14sp" />
-
-        </RelativeLayout>
+                android:layout_marginTop="32sp"
+                android:text="@string/get_started"
+                android:textColor="#10507A"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <EditText
+            android:id="@+id/username"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/username"
+            android:autofillHints="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="5dp"
+            android:textColorHint="#04ABFB"
+            android:textColor="#000"
+            android:inputType="text"/>
+        <EditText
             android:id="@+id/email"
+            android:textColor="#000"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/email"
+            android:autofillHints="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/message_icon"
+            android:drawablePadding="5dp"
+            android:textColorHint="#04ABFB"/>
+
+        <EditText
+            android:id="@+id/first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -74,8 +76,24 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="5dp"
             android:ems="10"
-            android:hint="Email"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColorHint="#04ABFB" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Last name"
             android:inputType="textPersonName"
             android:textColorHint="#04ABFB" />
 
@@ -95,22 +113,21 @@
             android:textColorHint="#04ABFB"
             android:drawablePadding="5dp"/>
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/confirm_password"
+            android:textColor="#000"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/confirm_password"
+            android:autofillHints="@string/confirm_password"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:buttonTint="#10507A" />
-
-            <TextView
-                android:layout_marginStart="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/remember"/>
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock_icon"
+            android:drawablePadding="5dp"
+            android:textColorHint="#04ABFB"/>
 
         <Button
             android:id="@+id/sign_up"
@@ -118,8 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@drawable/sign_up_border"
-            android:onClick="loginApi"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="#fff"
             android:textStyle="bold" />
 
@@ -127,24 +143,26 @@
             android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
-                android:layout_marginStart="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/already_have_acc"
                 android:textColor="@android:color/black"
-                android:text="@string/dont_have_account"/>
+                android:textSize="14sp" />
             <TextView
                 android:id="@+id/go_to_login"
                 android:clickable="true"
                 android:focusable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_up"
-                android:layout_marginStart="5dp"
+                android:text="@string/login"
+                android:layout_marginStart="7dp"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="#04ABFB"/>
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

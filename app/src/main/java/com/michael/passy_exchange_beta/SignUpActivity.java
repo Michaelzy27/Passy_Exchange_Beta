@@ -34,7 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
     //User user;
 
     TextView logIn;
-    EditText DiscordID, Email, Password;
+    EditText Username, Email, Password, ConfirmPassword, FirstName, LastNmae;
     Button SignUp;
 
     FirebaseAuth firebaseAuth;
@@ -49,9 +49,12 @@ public class SignUpActivity extends AppCompatActivity {
         helper = new Helper(this);
 
         logIn = findViewById(R.id.go_to_login);
-        DiscordID = findViewById(R.id.signup_email_username);
+        Username = findViewById(R.id.username);
         Email = findViewById(R.id.email);
         Password = findViewById(R.id.password);
+        ConfirmPassword = findViewById(R.id.confirm_password);
+        FirstName = findViewById(R.id.first_name);
+        LastNmae = findViewById(R.id.last_name);
         SignUp = findViewById(R.id.sign_up);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -71,9 +74,12 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Toast.makeText(SignUpActivity.this, "Loading", Toast.LENGTH_SHORT).show();
 
-                String username = DiscordID.getText().toString();
+                String username = Username.getText().toString();
                 String email = Email.getText().toString();
                 String password = Password.getText().toString();
+                String confirmPassowrd = ConfirmPassword.getText().toString();
+                String firstName = FirstName.getText().toString();
+                String lastName = LastNmae.getText().toString();
 
                 if (username.isEmpty() && username.length() < 2){
                     Toast.makeText(SignUpActivity.this, "Please enter a Username (more than 2 characters", Toast.LENGTH_SHORT).show();
@@ -81,6 +87,12 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(SignUpActivity.this, "Please enter a valid email", Toast.LENGTH_SHORT).show();
                 }else if (password.isEmpty() && password.length() < 8){
                     Toast.makeText(SignUpActivity.this, "Please enter a password greater or equal to 8 characters", Toast.LENGTH_SHORT).show();
+                }else if (!password.equals(confirmPassowrd)){
+                    Toast.makeText(SignUpActivity.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+                }else if (firstName.isEmpty()){
+                    Toast.makeText(SignUpActivity.this, "Please enter your First Name", Toast.LENGTH_SHORT).show();
+                }else if (lastName.isEmpty()){
+                    Toast.makeText(SignUpActivity.this, "Please enter your Last Name", Toast.LENGTH_SHORT).show();
                 }else {
 
                     //user = new User(username, email, firstName, lastName);

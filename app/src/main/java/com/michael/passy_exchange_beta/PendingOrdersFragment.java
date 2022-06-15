@@ -30,12 +30,12 @@ public class PendingOrdersFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_pending_orders, container, false);
 
-//        RecyclerView pendingOrders = root.findViewById(R.id.pending_orders);
-//        recyclerLayout = new LinearLayoutManager(getContext());
-//        ordersAdapter = new PendingOrdersAdapter();
-//
-//        pendingOrders.setLayoutManager(recyclerLayout);
-//        pendingOrders.setAdapter(ordersAdapter);
+        RecyclerView pendingOrders = root.findViewById(R.id.pending_orders);
+        recyclerLayout = new LinearLayoutManager(getContext());
+        ordersAdapter = new PendingOrdersAdapter();
+
+        pendingOrders.setLayoutManager(recyclerLayout);
+        pendingOrders.setAdapter(ordersAdapter);
 
         return root;
     }
