@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
 
         NavItem[] drawerItem = new NavItem[5];
 
-        drawerItem[0] = new NavItem("Ball Room", R.drawable.dashboard);
+        drawerItem[0] = new NavItem("Yogapetz Challenge", R.drawable.dashboard);
         drawerItem[1] = new NavItem("Sneak Peeks", R.drawable.dashboard);
         drawerItem[2] = new NavItem("Your Profile", R.drawable.post);
-        drawerItem[3] = new NavItem("Mint Details", R.drawable.post);
+        drawerItem[3] = new NavItem("Events", R.drawable.post);
         drawerItem[4] = new NavItem("Logout", R.drawable.ic_outline_exit_to_app_24);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);

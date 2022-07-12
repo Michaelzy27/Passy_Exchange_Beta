@@ -37,6 +37,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-auth:21.0.1'
     implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
     testImplementation 'junit:junit:4.13'
     implementation 'androidx.cardview:cardview:1.0.0'
     testImplementation 'junit:junit:4.12'

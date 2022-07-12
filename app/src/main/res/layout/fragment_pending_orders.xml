@@ -43,37 +43,11 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="No. of messages:"
+        android:text="No. of Yogapetz \n Challenge:"
         android:textColor="#10507A"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:gravity="center|center_horizontal"
-        android:text="Friends:"
-        android:textColor="#10507A"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:gravity="center|center_horizontal"
-        android:text="Channels:"
-        android:textColor="#10507A"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
         android:id="@+id/textView26"
@@ -81,7 +55,7 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="EarlyBirdz, raider, bubbleguests"
+        android:text="Whitelisted petz, Verified petz"
         android:textColor="#10507A"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/textView12"
@@ -106,11 +80,11 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="HeKnowYou4528"
+        android:text="Lazy#1243"
         android:textColor="#10507A"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.305"
         app:layout_constraintStart_toEndOf="@+id/discordID"
         app:layout_constraintTop_toTopOf="@+id/discordID" />
 
@@ -120,42 +94,18 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="8,200 messages"
+        android:text="10"
         android:textColor="#10507A"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView26"
         app:layout_constraintTop_toTopOf="@+id/textView27" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:gravity="center|center_horizontal"
-        android:text="Olusho, Robomart, RaidGod"
-        android:textColor="#10507A"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView31"
-        app:layout_constraintTop_toTopOf="@+id/textView28" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:gravity="center|center_horizontal"
-        android:text="Sports, memes, birdhouse"
-        android:textColor="#10507A"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView24"
-        app:layout_constraintTop_toTopOf="@+id/textView29" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="139dp"
         android:layout_height="113dp"
         android:layout_marginTop="28dp"
-        android:src="@drawable/ghost"
+        android:src="@drawable/lazy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />

@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:background="@drawable/peek_26"
+            android:background="@drawable/sneak_peek_5"
             android:orientation="vertical"
             android:paddingStart="32dp"
             android:paddingTop="32dp"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32sp"
             android:paddingLeft="10dp"
-            android:text="Join the Ballers!"
+            android:text="Join the Petz!"
             android:textColor="#10507A"
             android:textSize="27sp"
             android:textStyle="bold" />

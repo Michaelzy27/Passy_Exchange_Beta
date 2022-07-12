@@ -24,7 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sneak_number"
-            app:srcCompat="@drawable/bbg" />
+            app:srcCompat="@drawable/lazy" />
 
         <TextView
             android:id="@+id/sneak_number"
