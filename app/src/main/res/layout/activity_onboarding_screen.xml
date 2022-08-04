@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#32332332"
+    android:background="#f64059"
     android:padding="0dp"
     tools:context=".OnboardingScreen">
 
@@ -18,7 +18,7 @@
             android:layout_height="420dp"
             android:layout_marginTop="30dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/searaiders_1"
+            android:src="@drawable/yyg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +52,7 @@
                 android:background="@drawable/rounded_white_button"
                 android:text="LOGIN"
                 android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#232323"
                 android:textStyle="bold" />
         </LinearLayout>
 
