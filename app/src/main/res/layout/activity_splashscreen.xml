@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#52c2e8"
+    android:background="#000000"
     tools:context=".Splashscreen">
 
   <ImageView
@@ -15,14 +15,14 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/peek_0" />
+      app:srcCompat="@drawable/searaiders" />
 
   <TextView
       android:id="@+id/splashtxt"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="casual"
-      android:text="YOGA PETZ"
+      android:text="SeaRaiders!"
       android:textColor="#fffdfc"
       android:textSize="30sp"
       android:textStyle="bold"
@@ -38,7 +38,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="casual"
-      android:text="Its a lifestyle!"
+      android:text="AHHOYYYYYY!!!"
       android:textColor="#fffdfc"
       android:textSize="32sp"
       android:textStyle="bold"

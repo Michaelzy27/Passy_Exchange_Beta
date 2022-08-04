@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_bold"
             android:text="Sneak Peek #1"
-            android:textColor="#FC75F6"
+            android:textColor="#E3323A"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

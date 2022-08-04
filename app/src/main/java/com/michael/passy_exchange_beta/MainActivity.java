@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         NavItem[] drawerItem = new NavItem[5];
 
-        drawerItem[0] = new NavItem("Yogapetz Challenge", R.drawable.dashboard);
+        drawerItem[0] = new NavItem("SeaRiders Chat", R.drawable.dashboard);
         drawerItem[1] = new NavItem("Sneak Peeks", R.drawable.dashboard);
         drawerItem[2] = new NavItem("Your Profile", R.drawable.post);
         drawerItem[3] = new NavItem("Events", R.drawable.post);

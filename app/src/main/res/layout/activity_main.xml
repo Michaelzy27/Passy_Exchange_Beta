@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Hello Petz!"
+            android:text="Hello Pirate!"
             android:textColor="#fff"
             android:textSize="18sp" />
 
@@ -52,7 +52,7 @@
             android:layout_height="140dp"
             android:layout_gravity="center"
             android:contentDescription="@string/profile_img"
-            android:src="@drawable/lazy" />
+            android:src="@drawable/sneak_peek3" />
 
         <TextView
             android:id="@+id/name_nav_bar"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Lazy (Lazy#1243)"
+            android:text="0xMichy"
             android:textColor="#fff"
             android:textSize="16sp" />
 

@@ -71,65 +71,65 @@ public class BuyCoinsFragment extends Fragment {
 
         FragmentActivity b = getActivity();
 
-        Timer t = new Timer();
-        //Set the schedule function and rate
-        t.scheduleAtFixedRate(new TimerTask() {
-
-
-
-            @Override
-            public void run() {
-                b.runOnUiThread(new Runnable() {
-
-                    @Override
-                    public void run() {
-
-                        if (seconds < 10) {
-                            timer.setText(hours + ":" + minutes + ":" + "0" + seconds);
-                            if (minutes < 10) {
-                                timer.setText(hours + ":0" + minutes + ":" + "0" + seconds);
-                            }
-                        } else if (minutes < 10) {
-                            timer.setText(hours + ":0" + minutes + ":" + +seconds);
-                        } else {
-                            timer.setText(hours + ":" + minutes + ":" + seconds);
-                        }
-
-
-                        if (seconds == 0) {
-//                            timer.setText(hours + ":" + minutes +":"+ seconds);
-
-                            seconds = 59;
-                            minutes = minutes - 1;
-
-//                            if (minutes == 0) {
+//        Timer t = new Timer();
+//        //Set the schedule function and rate
+//        t.scheduleAtFixedRate(new TimerTask() {
 //
-//                                timer.setText(hours + ":" + minutes +":"+ seconds);
 //
-//                                seconds=59;
-//                                minutes = 59;
-//                                hours=hours-1;
 //
+//            @Override
+//            public void run() {
+//                b.runOnUiThread(new Runnable() {
+//
+//                    @Override
+//                    public void run() {
+//
+//                        if (seconds < 10) {
+//                            timer.setText(hours + ":" + minutes + ":" + "0" + seconds);
+//                            if (minutes < 10) {
+//                                timer.setText(hours + ":0" + minutes + ":" + "0" + seconds);
 //                            }
-
-                        } else {
-                            seconds -= 1;
-                        }
-
-                        if (minutes == 0 && seconds == 0) {
-
-                            timer.setText(hours + ":0" + minutes + ":0" + seconds);
-
-                            seconds = 59;
-                            minutes = 59;
-                            hours = hours - 1;
-                        }
-                    }
-
-                });
-            }
-
-        }, 0, 1000);
+//                        } else if (minutes < 10) {
+//                            timer.setText(hours + ":0" + minutes + ":" + +seconds);
+//                        } else {
+//                            timer.setText(hours + ":" + minutes + ":" + seconds);
+//                        }
+//
+//
+//                        if (seconds == 0) {
+////                            timer.setText(hours + ":" + minutes +":"+ seconds);
+//
+//                            seconds = 59;
+//                            minutes = minutes - 1;
+//
+////                            if (minutes == 0) {
+////
+////                                timer.setText(hours + ":" + minutes +":"+ seconds);
+////
+////                                seconds=59;
+////                                minutes = 59;
+////                                hours=hours-1;
+////
+////                            }
+//
+//                        } else {
+//                            seconds -= 1;
+//                        }
+//
+//                        if (minutes == 0 && seconds == 0) {
+//
+//                            timer.setText(hours + ":0" + minutes + ":0" + seconds);
+//
+//                            seconds = 59;
+//                            minutes = 59;
+//                            hours = hours - 1;
+//                        }
+//                    }
+//
+//                });
+//            }
+//
+//        }, 0, 1000);
 
 //        new Handler().postDelayed(new Runnable() {
 //            @Override

@@ -9,9 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 
 import com.michael.passy_exchange_beta.Adapters.SneakPeekAdapter;
 import com.michael.passy_exchange_beta.Models.SneakModel;
@@ -103,13 +101,10 @@ public class SellCoinsFragment extends Fragment {
 
     private List<SneakModel> list() {
         List<SneakModel> sneakList = new ArrayList<>();
-        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.peek_1));
-        sneakList.add(new SneakModel("Sneak peek #2", R.drawable.sneak_peek_2));
-        sneakList.add(new SneakModel("Sneak peek #3", R.drawable.sneak_peek_3));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.sneak_peek_5));
-        sneakList.add(new SneakModel("Sneak peek #6", R.drawable.sneak_peek_6));
-        sneakList.add(new SneakModel("Sneak peek #8", R.drawable.sneak_peek_8));
-        sneakList.add(new SneakModel("Sneak peek #9", R.drawable.sneak_peek_9));
+        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.searaiders_1));
+        sneakList.add(new SneakModel("Sneak peek #2", R.drawable.sneak_peek));
+        sneakList.add(new SneakModel("Sneak peek #3", R.drawable.sneak_peek1));
+        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.sneak_peek3));
 
         return sneakList;
     }
