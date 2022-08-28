@@ -37,7 +37,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_blue_button"
-                android:text="Twitter : @SeaRaidersNFT"
+                android:text="Twitter : @ProjectYinYang"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textStyle="bold" />

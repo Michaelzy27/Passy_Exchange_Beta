@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1E3EE"
+    android:background="#BFF64059"
     tools:context=".PendingOrdersFragment">
 
     <TextView
@@ -15,7 +15,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Profile"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Twitter:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -44,7 +44,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Raided Tweets:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -55,8 +55,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="HeKnowYou#4528"
-        android:textColor="#10507A"
+        android:text="Lazy#1243"
+        android:textColor="#232323"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView13" />
@@ -69,7 +69,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Discord ID:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/discordID"
         app:layout_constraintTop_toBottomOf="@+id/discordID" />
@@ -80,8 +80,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="\@0xmichy"
-        android:textColor="#10507A"
+        android:text="\@Michaelzy_dev"
+        android:textColor="#232323"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.305"
@@ -94,8 +94,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="8"
-        android:textColor="#10507A"
+        android:text="16"
+        android:textColor="#232323"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView26"
         app:layout_constraintTop_toTopOf="@+id/textView27" />
@@ -105,7 +105,7 @@
         android:layout_width="139dp"
         android:layout_height="113dp"
         android:layout_marginTop="28dp"
-        android:src="@drawable/sneak_peek3"
+        android:src="@drawable/michaelzy_dev"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />

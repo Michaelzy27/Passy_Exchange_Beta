@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Hello Pirate!"
+            android:text="Hello Rebel!"
             android:textColor="#fff"
             android:textSize="18sp" />
 
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="0xMichy"
+            android:text="Michaelzy_dev"
             android:textColor="#fff"
             android:textSize="16sp" />
 

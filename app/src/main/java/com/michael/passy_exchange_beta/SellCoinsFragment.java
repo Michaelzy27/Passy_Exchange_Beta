@@ -101,10 +101,12 @@ public class SellCoinsFragment extends Fragment {
 
     private List<SneakModel> list() {
         List<SneakModel> sneakList = new ArrayList<>();
-        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.searaiders_1));
-        sneakList.add(new SneakModel("Sneak peek #2", R.drawable.sneak_peek));
-        sneakList.add(new SneakModel("Sneak peek #3", R.drawable.sneak_peek1));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.sneak_peek3));
+        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.sneak_peek1));
+        sneakList.add(new SneakModel("Sneak peek #2", R.drawable.sneak_peek2));
+        sneakList.add(new SneakModel("Sneak peek #3", R.drawable.sneak_peek3));
+        sneakList.add(new SneakModel("Sneak peek #4", R.drawable.sneak_peek4));
+        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.sneak_peek5));
+
 
         return sneakList;
     }

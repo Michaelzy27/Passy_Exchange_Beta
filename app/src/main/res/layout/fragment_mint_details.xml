@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1E3EE">
+    android:background="#BFF64059">
 
     <TextView
         android:id="@+id/discordID7"
@@ -12,25 +12,12 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="\@SeaRaiders Twitter Space"
-        android:textColor="#10507A"
+        android:text="AMA with \@MaisonGhost and \@Nomad_eth"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/discordID5"
         app:layout_constraintTop_toTopOf="@+id/textView23" />
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:gravity="center|center_horizontal"
-        android:text="Event 5:"
-        android:textColor="#10507A"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
         android:id="@+id/textView28"
@@ -41,7 +28,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Event 4:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -52,8 +39,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Swab the deck with Billy!"
-        android:textColor="#10507A"
+        android:text="New Boss reveal"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/discordID7"
         app:layout_constraintTop_toTopOf="@+id/textView28" />
@@ -67,22 +54,11 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Event 3:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
-    <TextView
-        android:id="@+id/discordID4"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:gravity="center|center_horizontal"
-        android:text="Private meeting with \nCaptain Gibbs"
-        android:textColor="#10507A"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/discordID6"
-        app:layout_constraintTop_toTopOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/discordID2"
@@ -91,8 +67,8 @@
         android:layout_marginStart="68dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="SeaRaider crew party"
-        android:textColor="#10507A"
+        android:text="Streetlist(WL) allocation"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/discordID3"
         app:layout_constraintTop_toTopOf="@+id/discordID3" />
@@ -103,8 +79,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Private Sailor Party"
-        android:textColor="#10507A"
+        android:text="YYG initiation ceremony"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/discordID2"
         app:layout_constraintTop_toTopOf="@+id/textView33" />
@@ -118,7 +94,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Event 1:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
@@ -132,7 +108,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Event 2:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/discordID3" />
@@ -145,7 +121,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Events"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -158,7 +134,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/dm_sans_bold"
         android:text="Here are the upcoming events:"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,11 +147,11 @@
         android:layout_marginTop="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:text="These events get updated every week"
-        android:textColor="#10507A"
+        android:textColor="#232323"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/discordID4"
+        app:layout_constraintTop_toBottomOf="@+id/discordID6"
         app:layout_constraintVertical_bias="0.117" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

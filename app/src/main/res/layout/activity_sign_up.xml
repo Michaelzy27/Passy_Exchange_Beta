@@ -47,7 +47,7 @@
                 android:autofillHints="@string/username_email"
                 android:drawableStart="@drawable/ic_baseline_person_outline_24"
                 android:drawablePadding="5dp"
-                android:hint="Twitter ID (E.g SeaRidersNFT)"
+                android:hint="Twitter ID (E.g ProjectYinYang)"
                 android:inputType="textEmailAddress"
                 android:textColor="#000"
                 android:textColorHint="#fd3d3c" />
