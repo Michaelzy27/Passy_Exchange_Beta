@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Hello Rebel!"
+            android:text="Hello Yoot!"
             android:textColor="#fff"
             android:textSize="18sp" />
 

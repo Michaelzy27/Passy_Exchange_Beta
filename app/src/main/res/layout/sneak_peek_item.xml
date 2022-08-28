@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BFF64059"
+        android:background="#3d7067"
         android:paddingBottom="20dp">
 
         <ImageView
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_bold"
             android:text="Sneak Peek #1"
-            android:textColor="#232323"
+            android:textColor="#fcffa8"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

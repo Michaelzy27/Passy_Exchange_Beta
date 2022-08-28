@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fd3d3c"
+    android:background="#3d7067"
     tools:context=".Splashscreen">
 
   <ImageView
@@ -15,15 +15,15 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/yinlaunch" />
+      app:srcCompat="@drawable/yootpfp" />
 
   <TextView
       android:id="@+id/splashtxt"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="YYG!"
-      android:textColor="#232323"
+      android:text="YOOTS!"
+      android:textColor="#fcffa8"
       android:textSize="30sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -38,9 +38,9 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="JOIN THE GANG!"
-      android:textColor="#232323"
-      android:textSize="32sp"
+      android:text="WE ARE TRYING SOME NEW SHIT"
+      android:textColor="#fcffa8"
+      android:textSize="23sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"

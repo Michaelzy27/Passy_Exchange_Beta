@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BFF64059"
+    android:background="#3d7067"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_bold"
             android:text="Sneak Peeks"
-            android:textColor="#232323"
+            android:textColor="#fcffa8"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +33,7 @@
             android:layout_marginTop="19dp"
             android:fontFamily="@font/dm_sans_medium"
             android:text="Take a look at the released sneak peeks:"
-            android:textColor="#232323"
+            android:textColor="#fcffa8"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
