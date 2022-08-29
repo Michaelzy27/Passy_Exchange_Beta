@@ -33,7 +33,7 @@
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#10507A"
+        android:background="#3d7067"
         android:orientation="vertical"
         android:padding="32dp">
 
@@ -52,7 +52,7 @@
             android:layout_height="140dp"
             android:layout_gravity="center"
             android:contentDescription="@string/profile_img"
-            android:src="@drawable/sneak_peek3" />
+            android:src="@drawable/michaelzy_dev" />
 
         <TextView
             android:id="@+id/name_nav_bar"
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:choiceMode="singleChoice"
-            android:divider="#10507A"
+            android:divider="#3d7067"
             android:dividerHeight="0dp" />
 
     </LinearLayout>

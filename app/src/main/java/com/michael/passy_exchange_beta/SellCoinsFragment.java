@@ -101,19 +101,19 @@ public class SellCoinsFragment extends Fragment {
 
     private List<SneakModel> list() {
         List<SneakModel> sneakList = new ArrayList<>();
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots5));
+        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.yoots5));
         sneakList.add(new SneakModel("Sneak peek #2", R.drawable.yoots6));
         sneakList.add(new SneakModel("Sneak peek #3", R.drawable.yoots7));
-        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.yoots8));
-        sneakList.add(new SneakModel("Sneak peek #4", R.drawable.yoots19));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots10));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots11));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots12));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots13));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots14));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots15));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots16));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots4));
+        sneakList.add(new SneakModel("Sneak peek #4", R.drawable.yoots8));
+        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.yoots19));
+        sneakList.add(new SneakModel("Sneak peek #6", R.drawable.yoots10));
+        sneakList.add(new SneakModel("Sneak peek #7", R.drawable.yoots11));
+        sneakList.add(new SneakModel("Sneak peek #8", R.drawable.yoots12));
+        sneakList.add(new SneakModel("Sneak peek #9", R.drawable.yoots13));
+        sneakList.add(new SneakModel("Sneak peek #10", R.drawable.yoots14));
+        sneakList.add(new SneakModel("Sneak peek #11", R.drawable.yoots15));
+        sneakList.add(new SneakModel("Sneak peek #12", R.drawable.yoots16));
+        sneakList.add(new SneakModel("Sneak peek #13", R.drawable.yoots4));
 
 
         return sneakList;
