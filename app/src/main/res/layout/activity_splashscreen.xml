@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3d7067"
+    android:background="#c2b7ba"
     tools:context=".Splashscreen">
 
   <ImageView
@@ -15,15 +15,15 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/yootpfp" />
+      app:srcCompat="@drawable/hugo_io" />
 
   <TextView
       android:id="@+id/splashtxt"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="YOOTS!"
-      android:textColor="#fcffa8"
+      android:text="HUGO"
+      android:textColor="#b51f29"
       android:textSize="30sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -38,8 +38,8 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="WE ARE TRYING SOME NEW SHIT"
-      android:textColor="#fcffa8"
+      android:text="IMAGINARY ONES"
+      android:textColor="#b51f29"
       android:textSize="23sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"

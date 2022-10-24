@@ -14,9 +14,9 @@
         tools:context=".LoginActivity">
 
         <LinearLayout
-            android:layout_width="514dp"
-            android:layout_height="197dp"
-            android:background="@drawable/yoots2"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:background="@drawable/io_1"
             android:gravity="bottom|clip_horizontal"
             android:orientation="vertical"
             android:paddingStart="32dp"
@@ -30,8 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32sp"
             android:paddingLeft="10dp"
-            android:text="Meet other Yoots"
-            android:textColor="#ff9be3"
+            android:text="Login to HUGO!"
+            android:textColor="#b51f29"
             android:textSize="27sp"
             android:textStyle="bold" />
 
@@ -53,7 +53,7 @@
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:textColor="#000"
-                android:textColorHint="#FA80D8" />
+                android:textColorHint="#b51f29" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textColor="#000"
-            android:textColorHint="#FA80D8" />
+            android:textColorHint="#b51f29" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -132,7 +132,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/sign_up"
-                android:textColor="#FA80D8"
+                android:textColor="#b51f29"
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </LinearLayout>

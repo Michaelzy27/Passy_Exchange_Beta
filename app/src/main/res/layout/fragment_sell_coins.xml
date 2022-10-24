@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3d7067"
+    android:background="#c2b7ba"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,8 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_bold"
-            android:text="Sneak Peeks"
-            android:textColor="#fcffa8"
+            android:text="IO Merch"
+            android:textColor="#b51f29"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,8 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="19dp"
             android:fontFamily="@font/dm_sans_medium"
-            android:text="Take a look at the released sneak peeks:"
-            android:textColor="#fcffa8"
+            android:text="Take a look at the released merchandise:"
+            android:textColor="#b51f29"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
