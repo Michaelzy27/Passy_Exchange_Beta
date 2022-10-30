@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3d7067">
+    android:background="#c2b7ba">
 
     <TextView
         android:id="@+id/discordID7"
@@ -12,8 +12,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Yootlist allocation ends \n (@y00tlist)"
-        android:textColor="#fcffa8"
+        android:text="Merch sale (500)"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/discordID5"
         app:layout_constraintTop_toTopOf="@+id/textView23" />
@@ -27,8 +27,8 @@
         android:layout_marginTop="44dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="02/09/22 :"
-        android:textColor="#fcffa8"
+        android:text="01/11/22 9AM PST:"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -39,8 +39,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Yoots Nft Mint!!!"
-        android:textColor="#fcffa8"
+        android:text="Private Allowlist Mint!"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/discordID7"
         app:layout_constraintTop_toTopOf="@+id/textView28" />
@@ -53,8 +53,8 @@
         android:layout_marginTop="44dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="01/09/22"
-        android:textColor="#fcffa8"
+        android:text="20/10/22 7AM PST:"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
@@ -67,8 +67,8 @@
         android:layout_marginStart="24dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Yootlist application ends."
-        android:textColor="#fcffa8"
+        android:text="IO X HUGO PARTNERSHIP\n ANNOUNCEMENT"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/discordID3"
         app:layout_constraintTop_toTopOf="@+id/discordID3" />
@@ -79,8 +79,8 @@
         android:layout_height="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Big announcement \n (@y00tsNFT, @Degodsnft)"
-        android:textColor="#fcffa8"
+        android:text="Twitter Spaces with \nHUGO team"
+        android:textColor="#b51f29"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="@+id/discordID2"
         app:layout_constraintTop_toTopOf="@+id/textView33" />
@@ -93,8 +93,8 @@
         android:layout_marginTop="80dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="29/08/22 11:59 PST:"
-        android:textColor="#fcffa8"
+        android:text="03/10/22 8AM PST:"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
@@ -107,8 +107,8 @@
         android:layout_marginTop="44dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="30/08/22 8AM PST:"
-        android:textColor="#fcffa8"
+        android:text="03/10/22 1PM PST:"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/discordID3" />
@@ -121,7 +121,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
         android:text="Events"
-        android:textColor="#fcffa8"
+        android:textColor="#b51f29"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,7 +134,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/dm_sans_bold"
         android:text="Here are the upcoming events:"
-        android:textColor="#fcffa8"
+        android:textColor="#b51f29"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,11 +147,38 @@
         android:layout_marginTop="47dp"
         android:fontFamily="@font/dm_sans_bold"
         android:text="These events get updated every week"
-        android:textColor="#fcffa8"
+        android:textColor="#b51f29"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/discordID6"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="01/11/22 11AM PST:"
+        android:textColor="#b51f29"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="Public Mint!"
+        android:textColor="#b51f29"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/discordID6"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

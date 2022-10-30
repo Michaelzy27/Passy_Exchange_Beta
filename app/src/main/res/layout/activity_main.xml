@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Hello Yoot!"
+            android:text="Hello IO!"
             android:textColor="#fff"
             android:textSize="18sp" />
 
@@ -52,7 +52,7 @@
             android:layout_height="140dp"
             android:layout_gravity="center"
             android:contentDescription="@string/profile_img"
-            android:src="@drawable/michaelzy_dev" />
+            android:src="@drawable/oxmichy" />
 
         <TextView
             android:id="@+id/name_nav_bar"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="Michaelzy_dev"
+            android:text="0xmichy"
             android:textColor="#fff"
             android:textSize="16sp" />
 

@@ -101,20 +101,11 @@ public class SellCoinsFragment extends Fragment {
 
     private List<SneakModel> list() {
         List<SneakModel> sneakList = new ArrayList<>();
-        sneakList.add(new SneakModel("IO X HUGO Merch #1", R.drawable.yoots5));
-        sneakList.add(new SneakModel("IO X HUGO Merch #2", R.drawable.yoots6));
-        sneakList.add(new SneakModel("IO X HUGO Merch #3", R.drawable.yoots7));
-        sneakList.add(new SneakModel("IO X HUGO Merch #4", R.drawable.yoots8));
-        sneakList.add(new SneakModel("IO X HUGO Merch #5", R.drawable.yoots19));
-        sneakList.add(new SneakModel("IO X HUGO Merch #6", R.drawable.yoots10));
-        sneakList.add(new SneakModel("IO X HUGO Merch #7", R.drawable.yoots11));
-        sneakList.add(new SneakModel("IO X HUGO Merch #8", R.drawable.yoots12));
-        sneakList.add(new SneakModel("IO X HUGO Merch #9", R.drawable.yoots13));
-        sneakList.add(new SneakModel("IO X HUGO Merch #10", R.drawable.yoots14));
-        sneakList.add(new SneakModel("IO X HUGO Merch #11", R.drawable.yoots15));
-        sneakList.add(new SneakModel("IO X HUGO Merch #12", R.drawable.yoots16));
-        sneakList.add(new SneakModel("IO X HUGO Merch #13", R.drawable.yoots4));
-
+        sneakList.add(new SneakModel("IO X HUGO Merch #1", R.drawable.io_sneak1));
+        sneakList.add(new SneakModel("IO X HUGO Merch #2", R.drawable.io_sneak2));
+        sneakList.add(new SneakModel("IO X HUGO Merch #3", R.drawable.io_sneak3));
+        sneakList.add(new SneakModel("IO X HUGO Merch #4", R.drawable.io_sneak4));
+        sneakList.add(new SneakModel("IO X HUGO Merch #5", R.drawable.io_sneak5));
 
         return sneakList;
     }
