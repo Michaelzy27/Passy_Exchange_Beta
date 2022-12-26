@@ -43,16 +43,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="@string/hello_frank"
+            android:text="Hello Petz!"
             android:textColor="#fff"
             android:textSize="18sp" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             android:layout_gravity="center"
             android:contentDescription="@string/profile_img"
-            android:src="@drawable/hng_board2" />
+            android:src="@drawable/lazy" />
 
         <TextView
             android:id="@+id/name_nav_bar"
@@ -60,9 +60,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="@string/franklyn"
+            android:text="Lazy (Lazy#1243)"
             android:textColor="#fff"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
         <ListView
             android:id="@+id/left_drawer"

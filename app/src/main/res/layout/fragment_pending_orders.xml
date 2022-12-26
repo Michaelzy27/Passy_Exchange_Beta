@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1E3EE"
     tools:context=".PendingOrdersFragment">
 
     <TextView
@@ -13,35 +14,100 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/dm_sans_bold"
         android:gravity="center|center_horizontal"
-        android:text="Pending Orders"
+        android:text="Profile"
         android:textColor="#10507A"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/discordID"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="Discord ID:"
+        android:textColor="#10507A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="No. of Yogapetz \n Challenge:"
+        android:textColor="#10507A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="Whitelisted petz, Verified petz"
+        android:textColor="#10507A"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="Server roles:"
+        android:textColor="#10507A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/discordID"
+        app:layout_constraintTop_toBottomOf="@+id/discordID" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="Lazy#1243"
+        android:textColor="#10507A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/discordID"
+        app:layout_constraintTop_toTopOf="@+id/discordID" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center|center_horizontal"
+        android:text="10"
+        android:textColor="#10507A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/test"
+        android:layout_width="139dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/lazy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pending_orders"
-        android:layout_width="0dp"
-        android:layout_height="661dp"
-        android:layout_margin="1dp"
-        android:layout_marginTop="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/pending_orders_item" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
+import com.michael.passy_exchange_beta.Adapters.SneakPeekAdapter;
+import com.michael.passy_exchange_beta.Models.SneakModel;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link SellCoinsFragment#newInstance} factory method to
@@ -27,6 +33,7 @@ public class SellCoinsFragment extends Fragment {
     private RecyclerView recyclerview;
     private LinearLayoutManager layoutManager;
     private Spinner select_bank;
+    private SneakPeekAdapter sneakAdapter;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -69,13 +76,42 @@ public class SellCoinsFragment extends Fragment {
         // Inflate the layout for this fragment
         View root = (inflater.inflate(R.layout.fragment_sell_coins, container, false));
 
-        select_bank = root.findViewById(R.id.bank_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.banks, R.layout.bank_dropdown_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        select_bank.setAdapter(adapter);
+        //select_bank = root.findViewById(R.id.bank_spinner);
+        recyclerview = root.findViewById(R.id.sneak_peeks);
+        recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.banks, R.layout.bank_dropdown_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        select_bank.setAdapter(adapter);
+
+
+
+
+        sneakAdapter = new SneakPeekAdapter(list());
+        recyclerview.setAdapter(sneakAdapter);
+
+//        List<SneakModel> sneakList = new ArrayList<>();
+//        sneakList.add(new SneakModel("1", R.drawable.bbg));
+//        sneakList.add(new SneakModel("2", R.drawable.bbg));
+//        sneakList.add(new SneakModel("3", R.drawable.bbg));
+//        sneakList.add(new SneakModel("4", R.drawable.bbg));
+//        sneakList.add(new SneakModel("5", R.drawable.bbg));
 
 //        recyclerview.setAdapter(adapter);
 //        recyclerview.setLayoutManager(layoutManager);
         return root;
     }
+
+    private List<SneakModel> list() {
+        List<SneakModel> sneakList = new ArrayList<>();
+        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.peek_1));
+        sneakList.add(new SneakModel("Sneak peek #2", R.drawable.sneak_peek_2));
+        sneakList.add(new SneakModel("Sneak peek #3", R.drawable.sneak_peek_3));
+        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.sneak_peek_5));
+        sneakList.add(new SneakModel("Sneak peek #6", R.drawable.sneak_peek_6));
+        sneakList.add(new SneakModel("Sneak peek #8", R.drawable.sneak_peek_8));
+        sneakList.add(new SneakModel("Sneak peek #9", R.drawable.sneak_peek_9));
+
+        return sneakList;
+    }
+
 }

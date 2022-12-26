@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnboardingScreen"
-    android:background="#f8f8f9"
-    android:padding="0dp">
+    android:background="#52c2e8"
+    android:padding="0dp"
+    tools:context=".OnboardingScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,27 +16,20 @@
             android:id="@+id/imgVector"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="30dp"
             android:scaleType="fitXY"
-            android:src="@drawable/onboarding_vector"
+            android:src="@drawable/peek_0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imglogo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/hng_board_vector"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="50dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imglogo">
+            app:layout_constraintTop_toBottomOf="@+id/imgVector">
 
             <Button
                 android:id="@+id/btngetStarted"
@@ -44,7 +37,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_blue_button"
-                android:text="Get Started"
+                android:text="Twitter : @yogapetz"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textStyle="bold" />
@@ -57,9 +50,9 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/rounded_white_button"
-                android:text="Login"
+                android:text="LOGIN"
                 android:textAllCaps="false"
-                android:textColor="#04FBFB"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
         </LinearLayout>
 
