@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#52c2e8"
+    android:background="#fd3d3c"
     tools:context=".Splashscreen">
 
   <ImageView
@@ -15,15 +15,15 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/peek_0" />
+      app:srcCompat="@drawable/yinlaunch" />
 
   <TextView
       android:id="@+id/splashtxt"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:fontFamily="casual"
-      android:text="YOGA PETZ"
-      android:textColor="#fffdfc"
+      android:fontFamily="monospace"
+      android:text="YYG!"
+      android:textColor="#232323"
       android:textSize="30sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -37,9 +37,9 @@
       android:id="@+id/weballin"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:fontFamily="casual"
-      android:text="Its a lifestyle!"
-      android:textColor="#fffdfc"
+      android:fontFamily="monospace"
+      android:text="JOIN THE GANG!"
+      android:textColor="#232323"
       android:textSize="32sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
