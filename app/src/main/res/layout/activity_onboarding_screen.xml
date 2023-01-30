@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f64059"
+    android:background="@drawable/ether_"
     android:padding="0dp"
     tools:context=".OnboardingScreen">
 
@@ -12,24 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imgVector"
-            android:layout_width="0dp"
-            android:layout_height="420dp"
-            android:layout_marginTop="30dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/yyg"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgVector">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.879"
+            tools:layout_editor_absoluteX="0dp">
 
             <Button
                 android:id="@+id/btngetStarted"
@@ -37,7 +27,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_blue_button"
-                android:text="Twitter : @ProjectYinYang"
+                android:text="Twitter : @Ether"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textStyle="bold" />

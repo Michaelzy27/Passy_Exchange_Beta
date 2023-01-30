@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
+    android:background="#52B6BF"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:paddingTop="16dp"
     android:paddingBottom="16dp">
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/imageViewIcon"
+        android:fontFamily="@font/dm_sans_bold"
         android:gravity="center_vertical"
         android:paddingStart="10dp"
         android:paddingEnd="0dp"

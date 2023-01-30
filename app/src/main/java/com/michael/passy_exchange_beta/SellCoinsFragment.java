@@ -101,13 +101,18 @@ public class SellCoinsFragment extends Fragment {
 
     private List<SneakModel> list() {
         List<SneakModel> sneakList = new ArrayList<>();
-        sneakList.add(new SneakModel("Sneak peek #1", R.drawable.sneak_peek1));
-        sneakList.add(new SneakModel("Sneak peek #2", R.drawable.sneak_peek2));
-        sneakList.add(new SneakModel("Sneak peek #3", R.drawable.sneak_peek3));
-        sneakList.add(new SneakModel("Sneak peek #4", R.drawable.sneak_peek4));
-        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.sneak_peek5));
-
-
+        sneakList.add(new SneakModel("Sneak Peek #1", R.drawable.ether_1));
+        sneakList.add(new SneakModel("Sneak Peek #2", R.drawable.ether_2));
+        sneakList.add(new SneakModel("Sneak Peek #3", R.drawable.ether_3));
+        sneakList.add(new SneakModel("Sneak Peek #4", R.drawable.ether_4));
+        sneakList.add(new SneakModel("Fan Art #1", R.drawable.etherfa1));
+        sneakList.add(new SneakModel("Fan Art #2", R.drawable.etherfa2));
+        sneakList.add(new SneakModel("Fan Art #3", R.drawable.etherfa3));
+        sneakList.add(new SneakModel("Fan Art #4", R.drawable.etherfa4));
+        sneakList.add(new SneakModel("Fan Art #5", R.drawable.etherfa5));
+        sneakList.add(new SneakModel("Fan Art #6", R.drawable.etherfa6));
+        sneakList.add(new SneakModel("Fan Art #7", R.drawable.etherfa7));
+        sneakList.add(new SneakModel("Fan Art #8", R.drawable.etherfa8));
         return sneakList;
     }
 

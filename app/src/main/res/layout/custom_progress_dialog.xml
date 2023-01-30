@@ -17,7 +17,7 @@
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
-        app:SpinKit_Color="@color/colorPrimary"
+        app:SpinKit_Color="#3d7067"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

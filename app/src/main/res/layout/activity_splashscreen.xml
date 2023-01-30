@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fd3d3c"
+    android:background="#000103"
     tools:context=".Splashscreen">
 
   <ImageView
       android:id="@+id/imageView3"
-      android:layout_width="403dp"
+      android:layout_width="303dp"
       android:layout_height="827dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/yinlaunch" />
+      app:srcCompat="@drawable/ether" />
 
   <TextView
       android:id="@+id/splashtxt"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="YYG!"
-      android:textColor="#232323"
+      android:text="PROJECT ETHER"
+      android:textColor="#68a5fe"
       android:textSize="30sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -38,9 +38,9 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="monospace"
-      android:text="JOIN THE GANG!"
-      android:textColor="#232323"
-      android:textSize="32sp"
+      android:text="VIII &amp; Cvalley"
+      android:textColor="#68a5fe"
+      android:textSize="23sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
