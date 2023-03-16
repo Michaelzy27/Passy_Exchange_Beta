@@ -105,6 +105,13 @@ public class SellCoinsFragment extends Fragment {
         sneakList.add(new SneakModel("Sneak Peek #2", R.drawable.ether_2));
         sneakList.add(new SneakModel("Sneak Peek #3", R.drawable.ether_3));
         sneakList.add(new SneakModel("Sneak Peek #4", R.drawable.ether_4));
+        sneakList.add(new SneakModel("Sneak peek #5", R.drawable.ether_5));
+        sneakList.add(new SneakModel("Sneak peek #6", R.drawable.ether_6));
+        sneakList.add(new SneakModel("Sneak peek #7", R.drawable.ether_7));
+        sneakList.add(new SneakModel("Sneak peek #8", R.drawable.ether_8));
+        sneakList.add(new SneakModel("Sneak peek #9", R.drawable.ether_9));
+        sneakList.add(new SneakModel("Sneak peek #10", R.drawable.ether_10));
+        sneakList.add(new SneakModel("Sneak peek #11", R.drawable.ether_11));
         sneakList.add(new SneakModel("Fan Art #1", R.drawable.etherfa1));
         sneakList.add(new SneakModel("Fan Art #2", R.drawable.etherfa2));
         sneakList.add(new SneakModel("Fan Art #3", R.drawable.etherfa3));
